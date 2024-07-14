@@ -1,0 +1,97 @@
+* {
+  transition: all 0.2s;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url(font/RedHatDisplay-Regular.ttf);
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+main {
+  background-color: #fff9f9;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+.hero {
+  height: calc(100vh - 91px);
+
+  .img-hero {
+    @media (max-width: 1199px) {
+      height: 50vh;
+    }
+  }
+}
+
+.container {
+  height: 100%;
+}
+
+.text {
+  max-width: 530px;
+}
+
+.coronavirus-img {
+  max-width: 100%;
+  width: 600px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+form {
+  max-width: 100%;
+  margin: auto;
+
+  input {
+    width: 600px;
+    max-width: 100%;
+    padding: 20px 18px;
+    outline: none;
+  }
+
+  button {
+    right: 18px;
+    padding: 8px 30px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+
+  .card {
+    border: 0;
+    padding: 18px;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      border-bottom-color: red;
+    }
+
+    img {
+      margin: auto;
+    }
+
+    .text {
+      /* width: 350px; */
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
